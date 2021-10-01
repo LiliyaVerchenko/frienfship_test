@@ -25,7 +25,7 @@ SECRET_KEY = 'gy@dumf6mb&*wd2!s(w=wycm9d(zet)w9culh#1jxx6yikzh55'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,6 +125,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MAGIC_PATH = os.path.join(BASE_DIR, 'magic/')
 PHOTO_PATH = os.path.join(MAGIC_PATH, 'photo/')
